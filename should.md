@@ -10,6 +10,7 @@ This part of the tutorial tells what things should be covered in the section. So
 ### On-path vs Off-path
 ### Authentication and Authorization
 
+:sheep:
 
 ## What MUST go in the Security Considerations Section
 (each of the following sub-sections may be 1-3 slides)
@@ -20,8 +21,9 @@ This part of the tutorial tells what things should be covered in the section. So
 ### Residual Risk
 ### Risks resulting from foreseen misapplication or mis-deployment
 ### Call out information that is sent out
-#### Especially user information
+(Especially user information)
 
+:sheep:
 
 
 
