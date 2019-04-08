@@ -17,7 +17,16 @@ This part of the tutorial tells what things should be covered in the section. So
 ### In- and Out- of scope threats and attacks.
 ### Security of the Authentication
 ### Threat environment
-(usually includes deployment across the global Internet)
+* Usually this is the Internet Threat Model
+  * Doesn't need to be stated if that's it
+* Usually includes deployment across the global Internet
+* If your protocol is special, call out the threat environment
+
+Example:
+* PTPv2 requires that jitter be kept at sub-micro- or sub-nano-second levels.
+* It cannot have a router between the endpoints because routers do queueing.
+* Its threat environment is very different to that of anything that runs over the Internet.
+
 ### Residual Risk
 ### Risks resulting from foreseen misapplication or mis-deployment
 ### Call out information that is sent out
