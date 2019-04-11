@@ -5,7 +5,7 @@ This section lists common pitfalls SecDir reviewers have seen in Security Consid
 ## Security Considerations by Reference
 * "This does not change the security properties of the base protocol"
   * But this extension sends information that was never sent before
-    * Used to be IP or a server; now it's the name and phone number of the admin.
+    * Used to be the IP address of a server; now it's the name and phone number of the admin.
 * Don't go more than one level deep in indirection
 * Call out what's changed.
 
