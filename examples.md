@@ -10,7 +10,7 @@ This is an example of security considerations by reference
    section of [RFC4271] for a discussion of BGP security.  Also refer to
    [RFC4272] and [RFC6952] for analysis of security issues for BGP.
 ```
-# RFC 4271 is BGP. The model may be the same, but this is new information being sent out.
+* RFC 4271 is BGP. The model may be the same, but this is new information being sent out.
 ```
    The TLVs introduced in this document are used to propagate IGP
    defined information ([RFC7810] and [RFC7471].)  These TLVs represent
@@ -20,11 +20,11 @@ This is an example of security considerations by reference
    [RFC7471]) in order to prevent any security issue when propagating
    the TLVs into BGP-LS.
 ```
-# RFC 7810 and 7471 describe sending TE information in IS-IS and OSPF respectively. 
-# But IS-IS and OSPF run in different environments than BGP.
-  # IS-IS and OSPF run in a local network, while BGP is the Internet
-# It is not clear that information that is fine to send in OSPF is fine to send in BGP
-  # The Security Considerations section should specifically say this. 
+* RFC 7810 and 7471 describe sending TE information in IS-IS and OSPF respectively. 
+* But IS-IS and OSPF run in different environments than BGP.
+  * IS-IS and OSPF run in a local network, while BGP is the Internet
+* It is not clear that information that is fine to send in OSPF is fine to send in BGP
+  * The Security Considerations section should specifically say this. 
 
 :sheep:
 
@@ -43,7 +43,7 @@ This is an example of irrelevant information
    output of SHA-512 by taking its 256 left-most bits.  These 256 left-
    most bits are a prefix of the 512-bit output.
 ```
-# All true, but not really related to using the SHAKE functions in PKIX.
+* All true, but not really related to using the SHAKE functions in PKIX.
 
 ```
    When using ECDSA with SHAKEs, the ECDSA curve order SHOULD be chosen
@@ -56,7 +56,7 @@ This is an example of irrelevant information
    for curves with group order of 256-bits. id-ecdsa-with-shake256 is
    RECOMMENDED for curves with group order of 384-bits or more.
 ```
-# This is actually quite good. It instructs the user or (more likely) future document authors about where to use the SHAKE functions and with what curves they should be combined. 
-# This is not necessary for a fully compliant implementation, but it helps with where this function is to be used.
+* This is actually quite good. It instructs the user or (more likely) future document authors about where to use the SHAKE functions and with what curves they should be combined. 
+* This is not necessary for a fully compliant implementation, but it helps with where this function is to be used.
 
 :sheep:
