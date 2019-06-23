@@ -60,3 +60,38 @@ This is an example of irrelevant information
 * This is not necessary for a fully compliant implementation, but it helps with where this function is to be used.
 
 :sheep:
+
+### draft-xu-tictoc-ipsec-security-for-synchronization-02
+
+```
+   This protocol variation inherits all the security properties of
+   regular ESP as described in [RFC4303].
+```
+* The draft is about protecting IEEE-1588. 
+* IEEE-1588 cannot run through a router, because it would introduce too much variable latency.
+* OTOH ESP can handle a little jitter just fine.
+* So it doesn't have the same threat model or operating environment as RFC 4303.
+
+```
+   This document describes the modification or extension for the WESP
+   for the additional application.  The approach described in this
+   document requires the ESP endpoints to be modified to support the new
+   protocol.  It allows the ESP receiver or intermediate node not only
+   to distinguish encrypted and unencrypted traffic deterministically,
+   but also identify whether the encrypted packets are the common
+   packets or the time packets by a simpler implementation for the
+   transport node.
+```
+* This is motivation for implementing this draft. 
+* The only thing here related to security is that we are talking about IPsec. 
+* This belongs in the introduction.
+
+```
+   Note that whether the time packets identified by the defined mark
+   or tag are transparent or not, there is always a possibility for
+   attackers to employ interception attacks to block transmission.
+   How to prevent interception attack is out of scope of this draft.
+```
+* This last part is OK, but it's not enough.
+* A protocol that runs in an environment so different from the Internet Threat Model should call out those differences in the Security Considerations section.
+
