@@ -17,3 +17,5 @@ I've started a page for each of the sections of the tutorial. Each page will hav
 * [Pitfalls](pitfalls.md) - 10 minutes
 * Time for questions - 10 minutes
 
+Also, we have some [examples](examples.md) for use in the slides.
+
