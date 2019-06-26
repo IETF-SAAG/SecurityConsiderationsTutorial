@@ -95,3 +95,17 @@ This is an example of irrelevant information
 * This last part is OK, but it's not enough.
 * A protocol that runs in an environment so different from the Internet Threat Model should call out those differences in the Security Considerations section.
 
+### RFC 5246 (TLS 1.2)
+```
+This leaves a small timing channel, since MAC
+performance depends to some extent on the size of the data fragment,
+but it is not believed to be large enough to be exploitable, due to
+the large block size of existing MACs and the small size of the
+timing signal.
+```
+* Not in security considerations section (which is massive!)
+* Apprendix D recommends supporting renegotation
+* Multiple insecure algorithms still permitted
+* Default cipher suite was vulnerable
+* Real life vulnerabilities resulted from this
+* You should REMOVE vulnerable options, pick SECURE options by default, and SHRINK what people need to think about.
