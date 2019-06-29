@@ -112,7 +112,7 @@ timing signal.
 
 :sheep:
 
-### draft-epp
+### draft-ietf-regext-epp-fees
 ```
    The mapping extensions described in this document do not provide any
    security services beyond those described by EPP [RFC5730], the EPP
