@@ -109,3 +109,18 @@ timing signal.
 * Default cipher suite was vulnerable
 * Real life vulnerabilities resulted from this
 * You should REMOVE vulnerable options, pick SECURE options by default, and SHRINK what people need to think about.
+
+:sheep:
+
+### draft-epp
+```
+   The mapping extensions described in this document do not provide any
+   security services beyond those described by EPP [RFC5730], the EPP
+   domain name mapping [RFC5731], and protocol layers used by EPP.  The
+   security considerations described in these other specifications apply
+   to this specification as well.
+```
+
+Well, if nothing's changed, why did you write this draft in the first place?
+
+More seriously, we need to describe more than just security services.
